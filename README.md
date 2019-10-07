@@ -9,8 +9,10 @@ use:
 ```python
 from AioQrtg import qrtag
 
+
 #async 
 async def start():
+ import aiohttp
  async with aiohttp.ClientSession() as session:
   f= qrtag.QrTag(session)
    with open("file.jpg", "wb") as file:
