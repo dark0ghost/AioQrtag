@@ -18,7 +18,7 @@ async def start():
         file.write(await qr.create(data=message.text))
 #sync
 f = qrtag.QrTag()
- with open("file.jpg", "wb") as file:
+with open("file.jpg", "wb") as file:
         file.write(qr.sync_call(data="google.com",size=4,form="jpg"))
 
   
