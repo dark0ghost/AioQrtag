@@ -8,11 +8,10 @@ download:
 use:
 ```python
 from AioQrtg import qrtag
-
+import aiohttp
 
 #async 
 async def start():
- import aiohttp
  async with aiohttp.ClientSession() as session:
   f= qrtag.QrTag(session)
    with open("file.jpg", "wb") as file:
